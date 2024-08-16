@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NoticiasNET de gente que se entero tres días después</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Página web de noticias que es gestionada por personas que no sabían muy bien de que iba esto del periodismo y mantener a las personas informadas.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Boostrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- GoogleFonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
+  <!--my css-->
+  <link rel='stylesheet' media='screen and (min-width: 961px)' href='css/desc.css'>
+  <link rel='stylesheet' media='screen and (max-width: 960px)' href='css/mob.css'>
+  <meta property="og:title" content="NoticiasNET en tiempo real">
+  <meta property="og:description" content="Noticias que es gestionada por personas que no sabían muy bien de que iba esto del periodismo">
+  <meta property="og:url" content="https://rawgit.com/pacho21/noticiasweb/master/index.html">
+  <meta property="og:image" content="https://rawgit.com/pacho21/noticiasweb/master/img/bhead.jpg">
+  <!-- rs stuff-->
+  <link rel="alternate" type="application/rss+xml" title="NoticiasNET" href="rss/rss.xml">
+  <script src="js/news.js"></script>
+</head>
+<body>
+
+  <div id="divHead" class="jumbotron text-center"><h1>NoticiasNET</h1>
+    <br>
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-spy="affix" data-offset-top="330">
+      <!-- Carousel de noticias hemos de implementar leer del JSON tmb -->
+      <div id="itemsCarro" class="carousel-inner">
+        <div class="item active">
+          <h3>Politica: </h3>
+          <p>Crece tencion en Venezuela</p>
+        </div>
+        <div class="item">
+          <h3>Economia: </h3>
+          <p>Los mercados se desploman</p>
+        </div>
+        <div class="item">     
+          <h3>Informática: </h3>
+          <p>Logitech, tu mejor aliado para trabajar!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="divPublicidadMov"><img src="img/mads.jpg" alt="publicidad" id="imgPublicidadMov"></div>
+  <div id="divPublicidadWeb"><img src="img/ads.jpg" alt="publicidad" id="imgPublicidad"></div>
+  <div id="aire">
+    <h3 style="text-align: center;">Crece tencion en Venezuela</h3>
+    <div id="nImg">
+      <img src="data:image/jpeg;base64,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" alt="termo-contigo" id="imgNoticia" class="img-thumbnail">
+    </div>
+    <br/>
+    <div id="news" class="container">
+      <p>A la presión social e internacional contra Nicolás Maduro se suman los ataques de los hackers que han tumbado varias páginas web del oficialismo. </p><footer id="date" class="small">15/08/2024</footer>
+      <button id="seguirLeyendo" type="button" class="btn btn-default" onclick="window.location.href='new1.html'">Seguir leyendo</button>
+    </div>
+    <hr>
+    <h3 style="text-align: center;">Los mercados mundiales se desploman</h3>
+    <div id="nImg">
+      <img src="https://th.bing.com/th/id/OIP.FFg0TjoXyXOBXkMmUACBVwHaE7?w=223&h=180&c=7&r=0&o=5&pid=1.7" alt="Cristiano Ronaldo" id="imgNoticia" class="img-thumbnail">
+    </div>
+    <div id="news" class="container">
+     <br/>
+     <p>La caída iniciada en Asia prosiguió en Europa, y las acciones estadounidenses sufrieron un fuerte retroceso. Algunos inversores afirmaron que se trataba de un retroceso tardío. La estrategia de pedir yenes prestados a bajo costo para sacar partido en activos de mayor valor ha dejado de ser rentable.</p><footer id="date" class="small">15/08/2024</footer>
+     <button type="button" class="btn btn-default" onclick="window.location.href='new2.html'">Seguir leyendo</button>
+   </div>
+   <hr>
+   <h3 style="text-align: center;">Logitech, tu mejor aliado para trabajar</h3>
+   <div id="nImg">
+    <img src="img/logitech.jpg" alt="logi-logo" id="imgNoticia" class="img-thumbnail">
+  </div>
+  <div id="news" class="container">
+   <br/>
+   <p>Un pequeño estudio confirma de que Logitech es la marca de perifericos que rentabiliza más el trabajo, la concentración y la comodidad. El 80% de sus usuarios lo recomendarian.</p><footer id="date" class="small">15/08/2024</footer>
+   <button id="seguirLeyendo" type="button" class="btn btn-default">Seguir leyendo</button>
+ </div>
+ <hr>
+ <h3 style="text-align: center;">Logitech, tu mejor aliado para trabajar</h3>
+ <div id="nImg">
+  <img src="img/logitech.jpg" alt="logi-logo" id="imgNoticia" class="img-thumbnail">
+</div>
+<div id="news" class="container">
+ <br/>
+ <p>Un pequeño estudio confirma de que Logitech es la marca de perifericos que rentabiliza más el trabajo, la concentración y la comodidad. El 80% de sus usuarios lo recomendarian.</p><footer id="date" class="small">15/08/2024</footer>
+ <button id="seguirLeyendo" type="button" class="btn btn-default">Seguir leyendo</button>
+</div>
+<hr>
+</div>
+<div id="noMas" class="alert alert-danger"><p>No hay más noticias!</p></div>
+<div id="cargar"><button id="mas" type="button" class="btn btn-default">Cargar Más</button></div>
+
+
+<footer class="footer">
+  <div class="container">
+    <ul class="footer-links"> 
+      <li>Facebook <span class="glyphicon glyphicon-share"></span></li> 
+      <li>Location <span class="glyphicon glyphicon-map-marker"></span>
+        <li>About</li> 
+      </ul>
+      <p>Designed by <br/> Plamen Valentinov <span class="glyphicon glyphicon-pawn"></span></p> 
+    </div>
+  </footer>
+</body>
+</html>
